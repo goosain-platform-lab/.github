@@ -5,8 +5,9 @@ Hands-on infrastructure as code for Azure and GitHub.
 ## What's here
 - **This GitHub organisation, managed as code** – repos, teams and settings defined in Terraform
 - **Reusable platform template** – [`platform-iac-template`](https://github.com/goosain-platform-lab/platform-iac-template), a starting point for a new GitHub estate
-- **Azure AI application landing zone** – [`ai-landing-zone-lab`](https://github.com/goosain-platform-lab/ai-landing-zone-lab): a governed private spoke (policy guardrails, budget, private DNS, Bastion) hosting RAG and speech workloads, fully secretless
+- **Azure AI application landing zone** – [`ai-landing-zone-lab`](https://github.com/goosain-platform-lab/ai-landing-zone-lab): a governed private spoke (policy guardrails, budget, private DNS, Bastion) hosting RAG, speech and AKS workloads, fully secretless
 - **Terraform modules** – [`terraform-azurerm-ai-stt`](https://github.com/goosain-platform-lab/terraform-azurerm-ai-stt) (real-time speech-to-text and translation) and [`terraform-azurerm-ai-stt-batch`](https://github.com/goosain-platform-lab/terraform-azurerm-ai-stt-batch) (queue-driven transcription pipeline), released with versions and consumed by tag
+- **Private AKS module** – [`terraform-azurerm-aks`](https://github.com/goosain-platform-lab/terraform-azurerm-aks): private cluster with Entra ID RBAC, Cilium, workload identity, Key Vault CSI and Flux GitOps; secretless, with Kubernetes manifests validated in CI
 
 ## About me
 DevSecOps / Cloud Platform Engineer based in Cape Town, working with Azure, Azure DevOps and GitHub Enterprise.
